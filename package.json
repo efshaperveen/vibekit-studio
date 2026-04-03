@@ -1,0 +1,16 @@
+{
+  "name": "vibekit-studio",
+  "version": "1.0.0",
+  "description": "VibeKit Studio - Generate a theme, build a mini-site, publish it.",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  }
+}

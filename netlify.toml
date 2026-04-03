@@ -1,0 +1,108 @@
+[build]
+  command = "npm install"
+  publish = "src"
+  functions = "netlify/functions"
+
+[dev]
+  port = 8888
+
+# AUTH
+[[redirects]]
+  from = "/api/auth/signup"
+  to = "/.netlify/functions/auth-signup"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/auth/login"
+  to = "/.netlify/functions/auth-login"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/auth/logout"
+  to = "/.netlify/functions/auth-logout"
+  status = 200
+  force = true
+
+# PAGES
+[[redirects]]
+  from = "/api/pages/create"
+  to = "/.netlify/functions/pages-create"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/pages/get"
+  to = "/.netlify/functions/pages-get"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/pages/update"
+  to = "/.netlify/functions/pages-update"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/pages/publish"
+  to = "/.netlify/functions/pages-publish"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/pages/unpublish"
+  to = "/.netlify/functions/pages-unpublish"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/pages/duplicate"
+  to = "/.netlify/functions/pages-duplicate"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/pages"
+  to = "/.netlify/functions/pages-list"
+  status = 200
+  force = true
+
+# PUBLIC API
+[[redirects]]
+  from = "/api/public/page"
+  to = "/.netlify/functions/public-page"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/public/view"
+  to = "/.netlify/functions/public-view"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/public/contact"
+  to = "/.netlify/functions/public-contact"
+  status = 200
+  force = true
+
+# THEMES
+[[redirects]]
+  from = "/api/themes"
+  to = "/.netlify/functions/themes-list"
+  status = 200
+  force = true
+
+# PUBLIC PAGE ROUTES — /p/:slug → public.html (alag file!)
+# Ye index.html pe nahi, public.html pe jaayega
+[[redirects]]
+  from = "/p/*"
+  to = "/public.html"
+  status = 200
+
+# SPA routes — baaki sab index.html pe
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
