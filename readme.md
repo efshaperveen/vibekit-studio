@@ -49,7 +49,7 @@ cp .env.example .env
 ```
 Open `.env` and fill in your values:
 ```env
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/vibekit
+MONGODB_URI=your_mongodb_connection_string 
 JWT_SECRET=any_long_random_string_here_minimum_32_chars
 NODE_ENV=development
 ```
