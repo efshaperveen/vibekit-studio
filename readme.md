@@ -10,8 +10,8 @@ VibeKit Studio is a full-stack web application where users can select a design t
 
 | | |
 |---|---|
-| **Live URL** | `https://vibekit-studio.netlify.app` |
-| **GitHub** | `https://github.com/YOUR_USERNAME/vibekit-studio` |
+| **Live URL** | `https://prismatic-cocada-aae96b.netlify.app` |
+| **GitHub** | `https://github.com/efshaperveen/vibekit-studio` |
 
 ---
 
